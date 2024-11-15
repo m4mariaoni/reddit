@@ -5,6 +5,7 @@ header{
     box-shadow: var(--box-shadow);
     height: 64px;
     padding:0 var(--spacing-5);
+    margin-bottom: 1rem;
 }
 
 header .logo{

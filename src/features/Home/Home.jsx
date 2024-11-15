@@ -5,6 +5,7 @@ import PostLoading from "../Post/PostLoading";
 import { useDispatch, useSelector } from "react-redux";
 import { startGetPosts, fetchPosts, selectFilteredPosts, setSearchTerm, fetchComments } from "../../app/redditSlice";
 import getRandomNumber from "../../utils/getRandomNumber";
+import "./Home.css";
 
 const Home = () => {
     const reddit = useSelector((state) => state.reddit); // Empty object as default
@@ -83,7 +84,7 @@ const Home = () => {
 
 
     return(
-        <>
+        <div className="posts-layout">
             {posts.map((post, index) => (
                 <Post 
                     key={post.id}
@@ -91,7 +92,7 @@ const Home = () => {
                     onToggleComments={onToggleComments(index)}
                 />
             ))}
-        </>
+        </div>
     )
 }
 
