@@ -1,0 +1,10 @@
+.post-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.post-image-wrapper {
+    margin-bottom: 1rem;
+}

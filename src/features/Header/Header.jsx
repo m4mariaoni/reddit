@@ -36,7 +36,7 @@ export default function Header() {
                 <input
                     type="text"
                     placeholder="Search"
-                    value=""
+                    value={searchTermLocal}
                     aria-label="Search posts"
                     onChange={onSearchTermChange}
                 />
